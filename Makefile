@@ -17,7 +17,7 @@ bootloader: kernel_code/boot.asm
 	nasm -f elf32 kernel_code/boot.asm -o kernel_output_files/boot.o
 
 kernel: kernel_code/kernel.c
-	gcc -m32 -c kernel_code/kernel.c -o kernel_output_files/kernel.o
+	gcc -m32 -fno-stack-protector -c kernel_code/kernel.c -o kernel_output_files/kernel.o
 
 linker: kernel_code/linker.ld bootloader kernel
 	ld -m elf_i386 -T kernel_code/linker.ld -o $(BIN) kernel_output_files/boot.o kernel_output_files/kernel.o
