@@ -1,3 +1,0 @@
-/home/vitalyv/CLionProjects/basickernelproject/cmake-build-debug/CMakeFiles/basickernelproject.dir
-/home/vitalyv/CLionProjects/basickernelproject/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/vitalyv/CLionProjects/basickernelproject/cmake-build-debug/CMakeFiles/rebuild_cache.dir
